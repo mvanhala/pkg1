@@ -34,7 +34,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          options(repos = c(CRAN = "https://packagemanager.rstudio.com/all/latest"))
+          options(repos = c(CRAN = "https://packagemanager.rstudio.com/all/__linux__/focal/latest"))
           remotes::install_deps(dependencies = TRUE)
           install.packages("pkgdown")
         shell: Rscript {0}
